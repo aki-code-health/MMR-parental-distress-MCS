@@ -27,5 +27,15 @@ All analyses were conducted using de-identified data.
 As the dataset is not publicly available, users will need to obtain access separately.  
 File paths should be adapted to local environments.
 
+## Data availability
+The data used in this study are from the UK Millennium Cohort Study (MCS) 
+and are available from the UK Data Service.
+
+Users must apply for access:
+https://ukdataservice.ac.uk/
+
+After downloading the data, please set your local data path in the do-file:
+global data "your/local/path"
+
 ## Author
 Akihiro Oishi
