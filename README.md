@@ -13,15 +13,14 @@ Stata/SE 15.0 (StataCorp LLC, College Station, TX, USA)
 Run the following Stata do-files in order:
 
 1. 1_Initial_settings_merge_MCS_sweep_1_2.do  
-2. 2_Merged_longitudinal_MCS1_2_parental_interview_derived_variables.do  
-3. 3_Editing_variable_restricting_sample_table1_complete_case.do  
+2. 2_Editing_variable_restricting_sample_table1_complete_case.do  
 
 **Main analysis:**  
-4. 4.0_Main_results_multiple_imputation_effect_modification_interaction_test.do  
+3. 3.0_Main_results_multiple_imputation_effect_modification_interaction_test.do  
 
 **Optional analyses:**  
-- 4.1_Sensitivity_analysis_outcome_definition.do  
-- 4.2_Supplement_analyses_reasons_non-immunisation.do  
+- 3.1_Sensitivity_analysis_outcome_definition.do  
+- 3.2_Supplement_analyses_reasons_non-immunisation.do  
 
 ## Reproducibility
 All analyses were conducted using de-identified data.  
