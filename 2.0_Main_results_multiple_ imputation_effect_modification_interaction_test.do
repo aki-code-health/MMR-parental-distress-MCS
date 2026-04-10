@@ -6,7 +6,7 @@ misstable pattern anatpatmatdistsincat AMATDAGB00cat3 APATDAGB00cat3 ADTOTS00cat
 mi set mlong
 mi register imputed anatpatmatdistsincat apatacqucat3 apatwkst00cat2 ampeta00cat3 AMATDAGB00cat3 APATDAGB00cat3 amatacqucat3 AOECDUK0cat5 amatwkst00cat2 AXD07S00cat3
 mi register regular bmmmrlaabi ahcsexa0 ADBWGTA0cat ADTOTS00cat3 ADGPAR00
-mi impute chained (mlogit) anatpatmatdistsincat apatacqucat3 ampeta00cat3 AMATDAGB00cat3 APATDAGB00cat3 amatacqucat3 AOECDUK0cat5 AXD07S00cat3 amatwkst00cat2 apatwkst00cat2 = bmmmrlaabi ahcsexa0 ADBWGTA0cat ADTOTS00cat3 ADGPAR00, add(20) rseed(12345) augment force
+mi impute chained (mlogit) anatpatmatdistsincat apatacqucat3 ampeta00cat3 AMATDAGB00cat3 APATDAGB00cat3 amatacqucat3 AOECDUK0cat5 AXD07S00cat3 amatwkst00cat2 apatwkst00cat2 = bmmmrlaabi ahcsexa0 ADBWGTA0cat ADTOTS00cat3 ADGPAR00, add(40) rseed(12345) augment force
 mi svyset SPTN00 [pweight=BOVWT2], strata(PTTYPE2) fpc(NH2)
 mi estimate, or post: svy: logistic bmmmrlaabi i.anatpatmatdistsincat i.AMATDAGB00cat3 i.APATDAGB00cat3 i.ADTOTS00cat3 i.amatacqucat3 i.apatacqucat3 i.AOECDUK0cat5 i.ampeta00cat3 ADGPAR00 i.amatwkst00cat2 i.apatwkst00cat2 i.AXD07S00cat3
 ssc install mimrgns
